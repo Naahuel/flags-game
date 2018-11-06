@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <md-content>
+    <md-toolbar class="md-primary">
+      <h3 class="md-title">Flags</h3>
+    </md-toolbar>
+  </md-content>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+// State utils
+import { mapState } from 'vuex';
 
 export default {
-  name: 'app',
+  // Component name
+  name: 'App',
+
+  // Imported components
   components: {
-    HelloWorld,
+
+  },
+
+  // Computed methods & state
+  computed: {
+    ...mapState({
+      groups: ({groups}) => groups
+    })
   },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
