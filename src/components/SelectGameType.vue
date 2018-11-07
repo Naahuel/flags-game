@@ -9,7 +9,7 @@
     </p>
     <p>
       <md-button to="/infinite" class="md-raised md-accent">
-        <img src="../assets/icons/infinity-white.svg">
+        <img src="../assets/icons/infinity.svg">
         Infinite
       </md-button>
     </p>

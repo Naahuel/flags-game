@@ -12,7 +12,8 @@ import store from './store';
 
 import './registerServiceWorker';
 import 'vue-material/dist/vue-material.min.css';
-import 'vue-material/dist/theme/default.css';
+// import 'vue-material/dist/theme/default.css';
+import 'vue-material/dist/theme/black-green-light.css'
 
 Vue.use(MdApp);
 Vue.use(MdContent);
