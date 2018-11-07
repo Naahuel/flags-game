@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="md-display-2">Select your mode:</h1>
+    <h2 class="md-display-1">Select your mode:</h2>
     <p>
       <md-button to="/timed" class="md-raised md-primary">
         <img src="../assets/icons/hourglass-white.svg">

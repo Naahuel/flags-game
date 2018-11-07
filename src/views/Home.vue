@@ -1,5 +1,9 @@
 <template>
-  <select-game-type></select-game-type>
+  <div class="container">
+    <img src="../assets/logos/logo.svg" alt="Flag Quiz">
+    <h1 class="md-display-2">Flag Quiz</h1>
+    <select-game-type></select-game-type>
+  </div>
 </template>
 
 <script>
@@ -16,3 +20,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .container{
+    text-align: center;
+  }
+  img{
+    display: inline-block;
+    max-width: 50%;
+  }
+</style>
