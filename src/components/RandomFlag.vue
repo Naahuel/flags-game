@@ -24,24 +24,24 @@ export default {
   // Data
   data() {
     return {
-      randomFlagIndex: 0
-    }
+      randomFlagIndex: 0,
+    };
   },
 
   // Methods
   methods: {
-    getIconPath (iconName) {
-        return iconName ? require(`../assets/flags-normal/${iconName}.png`) : '';
+    getIconPath(iconName) {
+      return iconName ? require(`../assets/flags-normal/${iconName}.png`) : '';
     },
-    getRandomFlag () {
+    getRandomFlag() {
       this.randomFlagIndex = Math.floor(Math.random() * (this.flags.length - 1));
-    }
+    },
   },
 
   // Computed methods & state
   computed: {
     ...mapState({
-      flags: ({flags}) => flags,
+      flags: ({ flags }) => flags,
     }),
   },
 };
