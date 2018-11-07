@@ -4,7 +4,6 @@
       v-for="flag in flags"
       v-bind:key="`guessbutton-${flag.code}`"
       @click="onClick(flag.code)"
-      class="md-raised"
       v-bind:class="{
         'correct': justGuessed && correctFlag.code === flag.code,
         'wrong': justGuessed && currentGuess === flag.code && correctFlag.code !== flag.code,
@@ -41,8 +40,11 @@ export default {
   .md-button{
     display: block;
     width: 100%;
+    height: 50px;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #cecece;
+    border-radius: 20px;
   }
   .correct{
     background-color: #239e23 !important;

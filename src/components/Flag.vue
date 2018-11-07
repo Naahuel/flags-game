@@ -1,6 +1,6 @@
 <template>
-  <md-content class="md-elevation-12">
-    <img :src="getFlagPath(code)">
+  <md-content>
+    <img class="md-elevation-15" :src="getFlagPath(code)">
   </md-content>
 </template>
 
@@ -36,10 +36,8 @@ export default {
 <style lang="scss" scoped>
   img {
     display: block;
-    width: 100%;
-  }
-  .md-content{
-    max-width: 70%;
+    height: 200px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
   }
