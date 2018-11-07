@@ -5,7 +5,7 @@
 
 [Play now!](https://flag-quiz.now.sh)
 
-![Flag Quiz](https://i.imgur.com/xtbqPyj.png) ![Flag Quiz](https://i.imgur.com/GU7MmRI.png)
+![Flag Quiz](https://i.imgur.com/xtbqPyj.png?v=1) ![Flag Quiz](https://i.imgur.com/GU7MmRI.png?v=1)
 
 
 ## Project setup for development
