@@ -4,6 +4,7 @@
       v-for="flag in flags"
       v-bind:key="`guessbutton-${flag.code}`"
       @click="onClick(flag.code)"
+      :disabled="justGuessed"
       v-bind:class="{
         'correct': justGuessed && correctFlag.code === flag.code,
         'wrong': justGuessed && currentGuess === flag.code && correctFlag.code !== flag.code,
