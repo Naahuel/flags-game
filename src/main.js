@@ -4,6 +4,7 @@ import {
   MdContent,
   MdToolbar,
   MdButton,
+  MdTable,
 } from 'vue-material/dist/components';
 import router from './router';
 import App from './App.vue';
@@ -17,6 +18,7 @@ Vue.use(MdApp);
 Vue.use(MdContent);
 Vue.use(MdToolbar);
 Vue.use(MdButton);
+Vue.use(MdTable);
 
 Vue.config.productionTip = false;
 

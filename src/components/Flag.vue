@@ -38,4 +38,9 @@ export default {
     display: block;
     width: 100%;
   }
+  .md-content{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>

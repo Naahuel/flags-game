@@ -18,14 +18,11 @@ export default new Vuex.Store({
   // Root state
   state: {
     flags,
-    // Game modes
-    infinite: {
+    score: {
       total: 0,
       failed: 0,
       success: 0,
     },
-    timed: {},
-    // Common
     currentFlag: {},
     currentGameMode: '',
     currentOptions: [],
@@ -81,12 +78,12 @@ export default new Vuex.Store({
     },
     [GUESS_FLAG](state, code) {
       // Increase total
-      state[state.currentGameMode].total += 1;
+      state.score.total += 1;
       // Did we guess?
       if (state.currentFlag.code === code ) {
-        state[state.currentGameMode].success += 1;
+        state.score.success += 1;
       } else {
-        state[state.currentGameMode].failed += 1;
+        state.score.failed += 1;
       }
       // Set flags
       state.currentGuess = code;

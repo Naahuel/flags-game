@@ -9,6 +9,7 @@
       :just-guessed="justGuessed"
       v-on:guess="guessFlag"
     />
+    <score />
   </div>
 </template>
 
@@ -16,6 +17,7 @@
 import { mapActions, mapState } from 'vuex';
 import Flag from '@/components/Flag.vue';
 import GuessingButtons from '@/components/GuessingButtons.vue';
+import Score from '@/components/Score.vue';
 
 export default {
   // Component name
@@ -33,7 +35,8 @@ export default {
   // Imported components
   components: {
     Flag,
-    GuessingButtons
+    GuessingButtons,
+    Score,
   },
 
   // Methods
