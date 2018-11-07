@@ -4,24 +4,16 @@
       <h3 class="md-title">Flag Quiz</h3>
     </md-app-toolbar>
     <md-app-content>
-      <select-game-type></select-game-type>
+      <router-view/>
     </md-app-content>
   </md-app>
 </template>
 
 
 <script>
-// Imported components
-import SelectGameType from '@/components/SelectGameType.vue';
-
 export default {
   // Component name
   name: 'App',
-
-  // Imported components
-  components: {
-    SelectGameType,
-  },
 };
 </script>
 

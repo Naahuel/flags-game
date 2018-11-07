@@ -2,13 +2,13 @@
   <div>
     <h1 class="md-display-2">Select your mode:</h1>
     <p>
-      <md-button class="md-raised md-primary">
+      <md-button to="/timed" class="md-raised md-primary">
         <img src="../assets/icons/hourglass-white.svg">
         Timed
       </md-button>
     </p>
     <p>
-      <md-button class="md-raised md-accent">
+      <md-button to="/infinite" class="md-raised md-accent">
         <img src="../assets/icons/infinity-white.svg">
         Infinite
       </md-button>
