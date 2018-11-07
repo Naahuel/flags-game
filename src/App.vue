@@ -4,7 +4,7 @@
       <h3 class="md-title">Flag Quiz</h3>
     </md-app-toolbar>
     <md-app-content>
-      <random-flag></random-flag>
+      <select-game-type></select-game-type>
     </md-app-content>
   </md-app>
 </template>
@@ -12,7 +12,7 @@
 
 <script>
 // Imported components
-import RandomFlag from '@/components/RandomFlag.vue';
+import SelectGameType from '@/components/SelectGameType.vue';
 
 export default {
   // Component name
@@ -20,7 +20,7 @@ export default {
 
   // Imported components
   components: {
-    RandomFlag,
+    SelectGameType,
   },
 };
 </script>

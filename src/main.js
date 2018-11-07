@@ -3,6 +3,7 @@ import {
   MdApp,
   MdContent,
   MdToolbar,
+  MdButton,
 } from 'vue-material/dist/components';
 import App from './App.vue';
 import store from './store';
@@ -14,6 +15,7 @@ import 'vue-material/dist/theme/default.css';
 Vue.use(MdApp);
 Vue.use(MdContent);
 Vue.use(MdToolbar);
+Vue.use(MdButton);
 
 Vue.config.productionTip = false;
 
