@@ -28,7 +28,9 @@ export default new Vuex.Store({
     // Common
     currentFlag: {},
     currentGameMode: '',
-    currentOptions: []
+    currentOptions: [],
+    justGuessed: false,
+    currentGuess: '',
   },
 
   // Actions
@@ -48,8 +50,10 @@ export default new Vuex.Store({
     // Guess a flag & get new one!
     guessFlag({ commit }, code) {
       commit(GUESS_FLAG, code);
-      commit(GET_RANDOM_FLAG);
-      commit(GET_GUESSING_OPTIONS);
+      setTimeout(() => {
+        commit(GET_RANDOM_FLAG);
+        commit(GET_GUESSING_OPTIONS);
+      }, 1000)
     },
   },
 
@@ -58,6 +62,8 @@ export default new Vuex.Store({
     [GET_RANDOM_FLAG](state) {
       const randomFlagIndex = Math.floor(Math.random() * (state.flags.length - 1));
       state.currentFlag = state.flags[randomFlagIndex];
+      state.currentGuess = '';
+      state.justGuessed = false;
     },
     [GET_GUESSING_OPTIONS](state) {
       const numberOfOptions = 4;
@@ -82,6 +88,9 @@ export default new Vuex.Store({
       } else {
         state[state.currentGameMode].failed += 1;
       }
+      // Set flags
+      state.currentGuess = code;
+      state.justGuessed = true;
     },
     [SET_GAME_MODE](state, mode) {
       // Increase total

@@ -4,6 +4,9 @@
     <guessing-buttons
       class="buttons-container"
       :flags="currentOptions"
+      :correct-flag="currentFlag"
+      :current-guess="currentGuess"
+      :just-guessed="justGuessed"
       v-on:guess="guessFlag"
     />
   </div>
@@ -43,6 +46,8 @@ export default {
     ...mapState({
       currentFlag: ({currentFlag}) => currentFlag,
       currentOptions: ({currentOptions}) => currentOptions,
+      justGuessed: ({justGuessed}) => justGuessed,
+      currentGuess: ({currentGuess}) => currentGuess,
     })
   },
 };

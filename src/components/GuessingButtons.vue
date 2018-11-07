@@ -1,6 +1,15 @@
 <template>
   <md-content>
-    <md-button @click="onClick(flag.code)" class="md-raised md-primary" v-for="flag in flags" v-bind:key="`guessbutton-${flag.code}`">
+    <md-button
+      v-for="flag in flags"
+      v-bind:key="`guessbutton-${flag.code}`"
+      @click="onClick(flag.code)"
+      class="md-raised"
+      v-bind:class="{
+        'correct': justGuessed && correctFlag.code === flag.code,
+        'wrong': justGuessed && currentGuess === flag.code && correctFlag.code !== flag.code,
+      }"
+    >
       {{flag.name}}
     </md-button>
   </md-content>
@@ -14,6 +23,9 @@ export default {
   // Imported components
   props: {
     flags: Array,
+    justGuessed: Boolean,
+    currentGuess: String,
+    correctFlag: Object,
   },
 
   // Methods
@@ -31,5 +43,13 @@ export default {
     width: 100%;
     margin: 0;
     margin-bottom: 20px;
+  }
+  .correct{
+    background-color: #239e23 !important;
+    color: white !important;
+  }
+  .wrong{
+    background-color: #c21a1a !important;
+    color: white !important;
   }
 </style>
