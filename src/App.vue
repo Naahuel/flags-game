@@ -1,7 +1,7 @@
 <template>
   <md-content>
     <md-toolbar class="md-primary">
-      <h3 class="md-title">Flags</h3>
+      <h3 class="md-title">Flag Quiz</h3>
     </md-toolbar>
   </md-content>
 </template>
