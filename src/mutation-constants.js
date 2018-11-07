@@ -6,11 +6,7 @@
 // can use to compose in differnt ways.
 
 
-// export const ADD_TODO_GROUP = 'ADD_TODO_GROUP';
-// export const ADD_TODO       = 'ADD_TODO';
-
-// export const REMOVE_TODO_GROUP = 'REMOVE_TODO_GROUP';
-// export const REMOVE_TODO       = 'REMOVE_TODO';
-
-// export const DO_TODO   = 'DO_TODO';
-// export const UNDO_TODO = 'UNDO_TODO';
+export const SET_GAME_MODE = 'SET_GAME_MODE';
+export const GET_RANDOM_FLAG = 'GET_RANDOM_FLAG';
+export const GET_GUESSING_OPTIONS = 'GET_GUESSING_OPTIONS';
+export const GUESS_FLAG = 'GUESS_FLAG';

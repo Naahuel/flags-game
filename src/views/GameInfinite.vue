@@ -1,3 +1,57 @@
 <template>
-  <h1>Infinite</h1>
+  <div>
+    <flag class="flag-container" :code="currentFlag.code" />
+    <guessing-buttons
+      class="buttons-container"
+      :flags="currentOptions"
+      v-on:guess="guessFlag"
+    />
+  </div>
 </template>
+
+<script>
+import { mapActions, mapState } from 'vuex';
+import Flag from '@/components/Flag.vue';
+import GuessingButtons from '@/components/GuessingButtons.vue';
+
+export default {
+  // Component name
+  name: 'GameInfinite',
+
+  mounted() {
+    // Set the game mode
+    this.setGameMode('infinite');
+    // Get a random flag
+    this.getRandomFlag();
+    // Get options
+    this.getRandomOptions();
+  },
+
+  // Imported components
+  components: {
+    Flag,
+    GuessingButtons
+  },
+
+  // Methods
+  methods: {
+    ...mapActions(['guessFlag', 'setGameMode', 'getRandomFlag', 'getRandomOptions']),
+  },
+
+  // Computed
+  computed: {
+    ...mapState({
+      currentFlag: ({currentFlag}) => currentFlag,
+      currentOptions: ({currentOptions}) => currentOptions,
+    })
+  },
+};
+
+</script>
+
+<style lang="scss" scoped>
+  .flag-container,
+  .buttons-container{
+    margin-bottom: 40px;
+  }
+</style>

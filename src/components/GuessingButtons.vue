@@ -1,0 +1,35 @@
+<template>
+  <md-content>
+    <md-button @click="onClick(flag.code)" class="md-raised md-primary" v-for="flag in flags" v-bind:key="`guessbutton-${flag.code}`">
+      {{flag.name}}
+    </md-button>
+  </md-content>
+</template>
+
+<script>
+export default {
+  // Component name
+  name: 'GuessingButtons',
+
+  // Imported components
+  props: {
+    flags: Array,
+  },
+
+  // Methods
+  methods: {
+    onClick(code) {
+      this.$emit('guess', code);
+    }
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+  .md-button{
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+</style>

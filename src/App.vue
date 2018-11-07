@@ -9,14 +9,6 @@
   </md-app>
 </template>
 
-
-<script>
-export default {
-  // Component name
-  name: 'App',
-};
-</script>
-
 <style lang="scss">
   .md-app-content{
     max-width: 480px;

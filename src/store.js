@@ -1,10 +1,15 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import uuid from 'uuid';
+import { find, shuffle } from 'lodash';
 import flags from './constants/flags';
 
 // Mutation constants
-// import { } from './mutation-constants';
+import {
+  GUESS_FLAG,
+  SET_GAME_MODE,
+  GET_RANDOM_FLAG,
+  GET_GUESSING_OPTIONS,
+} from './mutation-constants';
 
 Vue.use(Vuex);
 
@@ -13,15 +18,74 @@ export default new Vuex.Store({
   // Root state
   state: {
     flags,
+    // Game modes
+    infinite: {
+      total: 0,
+      failed: 0,
+      success: 0,
+    },
+    timed: {},
+    // Common
+    currentFlag: {},
+    currentGameMode: '',
+    currentOptions: []
   },
 
   // Actions
   actions: {
-
+    // Set the game mode
+    setGameMode({ commit }, mode) {
+      commit(SET_GAME_MODE, mode);
+    },
+    // Get a random flag
+    getRandomFlag({ commit }) {
+      commit(GET_RANDOM_FLAG);
+    },
+    // Get options
+    getRandomOptions({ commit }) {
+      commit(GET_GUESSING_OPTIONS);
+    },
+    // Guess a flag & get new one!
+    guessFlag({ commit }, code) {
+      commit(GUESS_FLAG, code);
+      commit(GET_RANDOM_FLAG);
+      commit(GET_GUESSING_OPTIONS);
+    },
   },
 
   // Mutations
   mutations: {
+    [GET_RANDOM_FLAG](state) {
+      const randomFlagIndex = Math.floor(Math.random() * (state.flags.length - 1));
+      state.currentFlag = state.flags[randomFlagIndex];
+    },
+    [GET_GUESSING_OPTIONS](state) {
+      const numberOfOptions = 4;
+      state.currentOptions = [];
 
+      state.currentOptions.push(state.currentFlag);
+      while (state.currentOptions.length < numberOfOptions) {
+        const randomFlagIndex = Math.floor(Math.random() * (state.flags.length - 1));
+        const randomFlag = state.flags[randomFlagIndex];
+        if( !find(state.currentOptions, {code: randomFlag.code}) ) {
+          state.currentOptions.push(randomFlag);
+        }
+      }
+      state.currentOptions = shuffle(state.currentOptions);
+    },
+    [GUESS_FLAG](state, code) {
+      // Increase total
+      state[state.currentGameMode].total += 1;
+      // Did we guess?
+      if (state.currentFlag.code === code ) {
+        state[state.currentGameMode].success += 1;
+      } else {
+        state[state.currentGameMode].failed += 1;
+      }
+    },
+    [SET_GAME_MODE](state, mode) {
+      // Increase total
+      state.currentGameMode = mode;
+    },
   },
 });

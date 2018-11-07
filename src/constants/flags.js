@@ -780,7 +780,7 @@ export default [
     code: 'ae',
   },
   {
-    name: 'United Kingdom of Great Britain and Northern Ireland (the)',
+    name: 'Great Britain',
     code: 'gb',
   },
   {
