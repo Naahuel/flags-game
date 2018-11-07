@@ -1,8 +1,14 @@
+
 # Flag Quiz
 
-Small little game guessing game made with Vue.js
+> Small little flag guessing game made with Vue.js
 
-## Project setup
+[Play now!](https://flag-quiz.now.sh)
+
+![Flag Quiz](https://i.imgur.com/xtbqPyj.png) ![Flag Quiz](https://i.imgur.com/GU7MmRI.png)
+
+
+## Project setup for development
 ```
 npm install
 ```
