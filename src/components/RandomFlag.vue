@@ -3,7 +3,7 @@
     <button @click="getRandomFlag">Random flag</button>
     <h1>{{flags[randomFlagIndex].name}}</h1>
     <p>
-      <img :src="getIconPath(flags[randomFlagIndex].code)" alt="" width="200">
+      <img :src="getIconPath(flags[randomFlagIndex].code)">
     </p>
   </div>
 </template>
@@ -47,6 +47,9 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-
+<style lang="scss" scoped>
+  img {
+    width: 100%;
+    box-shadow: 0 0 5px 0px rgba(0,0,0,.3);
+  }
 </style>
