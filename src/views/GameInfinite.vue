@@ -1,5 +1,6 @@
 <template>
   <div>
+    <score class="score-container" />
     <flag class="flag-container" :code="currentFlag.code" />
     <guessing-buttons
       class="buttons-container"
@@ -9,7 +10,6 @@
       :just-guessed="justGuessed"
       v-on:guess="guessFlag"
     />
-    <score />
   </div>
 </template>
 
@@ -58,8 +58,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .score-container,
   .flag-container,
   .buttons-container{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 </style>
