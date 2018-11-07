@@ -1,6 +1,6 @@
 {
-  "name": "flags-game",
-  "short_name": "flags-game",
+  "name": "Flag Quiz",
+  "short_name": "Flag Quiz",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
