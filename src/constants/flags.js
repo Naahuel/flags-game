@@ -4,10 +4,6 @@ export default [
     code: 'af',
   },
   {
-    name: 'Åland Islands',
-    code: 'ax',
-  },
-  {
     name: 'Albania',
     code: 'al',
   },
@@ -16,24 +12,12 @@ export default [
     code: 'dz',
   },
   {
-    name: 'American Samoa',
-    code: 'as',
-  },
-  {
     name: 'Andorra',
     code: 'ad',
   },
   {
     name: 'Angola',
     code: 'ao',
-  },
-  {
-    name: 'Anguilla',
-    code: 'ai',
-  },
-  {
-    name: 'Antarctica',
-    code: 'aq',
   },
   {
     name: 'Antigua and Barbuda',
@@ -108,10 +92,6 @@ export default [
     code: 'bo',
   },
   {
-    name: 'Bonaire, Sint Eustatius and Saba',
-    code: 'bq',
-  },
-  {
     name: 'Bosnia and Herzegovina',
     code: 'ba',
   },
@@ -120,16 +100,8 @@ export default [
     code: 'bw',
   },
   {
-    name: 'Bouvet Island',
-    code: 'bv',
-  },
-  {
     name: 'Brazil',
     code: 'br',
-  },
-  {
-    name: 'British Indian Ocean Territory (the)',
-    code: 'io',
   },
   {
     name: 'Brunei Darussalam',
@@ -184,14 +156,6 @@ export default [
     code: 'cn',
   },
   {
-    name: 'Christmas Island',
-    code: 'cx',
-  },
-  {
-    name: 'Cocos (Keeling) Islands (the)',
-    code: 'cc',
-  },
-  {
     name: 'Colombia',
     code: 'co',
   },
@@ -208,10 +172,6 @@ export default [
     code: 'cg',
   },
   {
-    name: 'Cook Islands (the)',
-    code: 'ck',
-  },
-  {
     name: 'Costa Rica',
     code: 'cr',
   },
@@ -226,10 +186,6 @@ export default [
   {
     name: 'Cuba',
     code: 'cu',
-  },
-  {
-    name: 'Curaçao',
-    code: 'cw',
   },
   {
     name: 'Cyprus',
@@ -288,14 +244,6 @@ export default [
     code: 'et',
   },
   {
-    name: 'Falkland Islands (the) [Malvinas]',
-    code: 'fk',
-  },
-  {
-    name: 'Faroe Islands (the)',
-    code: 'fo',
-  },
-  {
     name: 'Fiji',
     code: 'fj',
   },
@@ -314,10 +262,6 @@ export default [
   {
     name: 'French Polynesia',
     code: 'pf',
-  },
-  {
-    name: 'French Southern Territories (the)',
-    code: 'tf',
   },
   {
     name: 'Gabon',
@@ -340,10 +284,6 @@ export default [
     code: 'gh',
   },
   {
-    name: 'Gibraltar',
-    code: 'gi',
-  },
-  {
     name: 'Greece',
     code: 'gr',
   },
@@ -356,20 +296,12 @@ export default [
     code: 'gd',
   },
   {
-    name: 'Guadeloupe',
-    code: 'gp',
-  },
-  {
     name: 'Guam',
     code: 'gu',
   },
   {
     name: 'Guatemala',
     code: 'gt',
-  },
-  {
-    name: 'Guernsey',
-    code: 'gg',
   },
   {
     name: 'Guinea',
@@ -386,10 +318,6 @@ export default [
   {
     name: 'Haiti',
     code: 'ht',
-  },
-  {
-    name: 'Heard Island and McDonald Islands',
-    code: 'hm',
   },
   {
     name: 'Holy See (the)',
@@ -432,10 +360,6 @@ export default [
     code: 'ie',
   },
   {
-    name: 'Isle of Man',
-    code: 'im',
-  },
-  {
     name: 'Israel',
     code: 'il',
   },
@@ -450,10 +374,6 @@ export default [
   {
     name: 'Japan',
     code: 'jp',
-  },
-  {
-    name: 'Jersey',
-    code: 'je',
   },
   {
     name: 'Jordan',
@@ -478,6 +398,10 @@ export default [
   {
     name: 'Korea (the Republic of)',
     code: 'kr',
+  },
+  {
+    name: 'Kosovo',
+    code: 'ks',
   },
   {
     name: 'Kuwait',
@@ -524,10 +448,6 @@ export default [
     code: 'lu',
   },
   {
-    name: 'Macao',
-    code: 'mo',
-  },
-  {
     name: 'Macedonia (the former Yugoslav Republic of)',
     code: 'mk',
   },
@@ -560,20 +480,12 @@ export default [
     code: 'mh',
   },
   {
-    name: 'Martinique',
-    code: 'mq',
-  },
-  {
     name: 'Mauritania',
     code: 'mr',
   },
   {
     name: 'Mauritius',
     code: 'mu',
-  },
-  {
-    name: 'Mayotte',
-    code: 'yt',
   },
   {
     name: 'Mexico',
@@ -598,10 +510,6 @@ export default [
   {
     name: 'Montenegro',
     code: 'me',
-  },
-  {
-    name: 'Montserrat',
-    code: 'ms',
   },
   {
     name: 'Morocco',
@@ -632,10 +540,6 @@ export default [
     code: 'nl',
   },
   {
-    name: 'New Caledonia',
-    code: 'nc',
-  },
-  {
     name: 'New Zealand',
     code: 'nz',
   },
@@ -652,18 +556,6 @@ export default [
     code: 'ng',
   },
   {
-    name: 'Niue',
-    code: 'nu',
-  },
-  {
-    name: 'Norfolk Island',
-    code: 'nf',
-  },
-  {
-    name: 'Northern Mariana Islands (the)',
-    code: 'mp',
-  },
-  {
     name: 'Norway',
     code: 'no',
   },
@@ -678,10 +570,6 @@ export default [
   {
     name: 'Palau',
     code: 'pw',
-  },
-  {
-    name: 'Palestine, State of',
-    code: 'ps',
   },
   {
     name: 'Panama',
@@ -704,10 +592,6 @@ export default [
     code: 'ph',
   },
   {
-    name: 'Pitcairn',
-    code: 'pn',
-  },
-  {
     name: 'Poland',
     code: 'pl',
   },
@@ -724,10 +608,6 @@ export default [
     code: 'qa',
   },
   {
-    name: 'Réunion',
-    code: 're',
-  },
-  {
     name: 'Romania',
     code: 'ro',
   },
@@ -740,28 +620,12 @@ export default [
     code: 'rw',
   },
   {
-    name: 'Saint Barthélemy',
-    code: 'bl',
-  },
-  {
-    name: 'Saint Helena, Ascension and Tristan da Cunha',
-    code: 'sh',
-  },
-  {
     name: 'Saint Kitts and Nevis',
     code: 'kn',
   },
   {
     name: 'Saint Lucia',
     code: 'lc',
-  },
-  {
-    name: 'Saint Martin (French part)',
-    code: 'mf',
-  },
-  {
-    name: 'Saint Pierre and Miquelon',
-    code: 'pm',
   },
   {
     name: 'Saint Vincent and the Grenadines',
@@ -804,10 +668,6 @@ export default [
     code: 'sg',
   },
   {
-    name: 'Sint Maarten (Dutch part)',
-    code: 'sx',
-  },
-  {
     name: 'Slovakia',
     code: 'sk',
   },
@@ -828,10 +688,6 @@ export default [
     code: 'za',
   },
   {
-    name: 'South Georgia and the South Sandwich Islands',
-    code: 'gs',
-  },
-  {
     name: 'South Sudan',
     code: 'ss',
   },
@@ -850,10 +706,6 @@ export default [
   {
     name: 'Suriname',
     code: 'sr',
-  },
-  {
-    name: 'Svalbard and Jan Mayen',
-    code: 'sj',
   },
   {
     name: 'Sweden',
@@ -892,10 +744,6 @@ export default [
     code: 'tg',
   },
   {
-    name: 'Tokelau',
-    code: 'tk',
-  },
-  {
     name: 'Tonga',
     code: 'to',
   },
@@ -916,10 +764,6 @@ export default [
     code: 'tm',
   },
   {
-    name: 'Turks and Caicos Islands (the)',
-    code: 'tc',
-  },
-  {
     name: 'Tuvalu',
     code: 'tv',
   },
@@ -938,10 +782,6 @@ export default [
   {
     name: 'United Kingdom of Great Britain and Northern Ireland (the)',
     code: 'gb',
-  },
-  {
-    name: 'United States Minor Outlying Islands (the)',
-    code: 'um',
   },
   {
     name: 'United States of America (the)',
@@ -974,10 +814,6 @@ export default [
   {
     name: 'Virgin Islands (U.S.)',
     code: 'vi',
-  },
-  {
-    name: 'Wallis and Futuna',
-    code: 'wf',
   },
   {
     name: 'Western Sahara*',
